@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-demo-project';
+  txtInput : string = "";
+  strList : string[]= [];
+  AddItem() {
+    this.strList.push(this.txtInput);
+    this.txtInput= ""
+  }
 }
